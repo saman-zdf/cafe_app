@@ -11,5 +11,15 @@ class Order
   def get_items
     return @order_items
   end
-
+  def display
+    if @order_items == {}
+      puts "your order is empty!"
+    puts "thank you for coming!"
+    else @order_items != {}
+      @order_items.each do |k, v|
+        puts "your order is #{v} #{k}"
+        puts "thank you for coming!"
+        end
+      end
+  end
 end

@@ -25,4 +25,13 @@ class Menu
     @menu_items.each {|item| puts item}
     return nil
   end
+
+  def validate_item(name)
+    @menu_items.each do |menu_item|
+      if menu_item.name == name
+        return name
+      end
+    end
+    return nil
+  end
 end

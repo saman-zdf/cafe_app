@@ -6,7 +6,7 @@ class MenuItem
   end
 
   def to_s
-    return "#{@name}" +" "*(10 - @name.length)+"...  #{@price}"
+    return "#{@name}" +" "*(10 - @name.length)+"...  $#{@price}"
   end
 
 end
