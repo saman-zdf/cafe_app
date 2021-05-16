@@ -16,7 +16,6 @@ loop do
     break
   end
   # check for valid menu item
-  
   item = cafe.menu.validate_item(input)
   if (item)
     puts "How many would you like?"
